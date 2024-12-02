@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: lts/*
     - name: This is demo step, plase delete IT
-      run: echo "Мы проходим ворота качества $QualityGates. Вид тестирования $Integration, тип тестирования $Sanity" 
+      run: echo "Мы проходим ворота качества [$QualityGates]. Вид тестирования [$Integration], тип тестирования [$TypeOfTests]" 
       env:
         TypeOfTests: Sanity   
     - name: Install dependencies
