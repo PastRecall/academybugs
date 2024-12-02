@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-console.lpg(process.env);
+console.log(process.env);
 
   await page.goto('https://academybugs.com/find-bugs/');
   await page.getByRole('link', { name: '50' }).click();
